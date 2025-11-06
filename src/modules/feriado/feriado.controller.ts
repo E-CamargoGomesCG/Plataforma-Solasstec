@@ -1,0 +1,34 @@
+import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe } from '@nestjs/common';
+import { FeriadoService } from './feriado.service';
+import { CreateFeriadoDto } from './dto/create-feriado.dto';
+import { UpdateFeriadoDto } from './dto/update-feriado.dto';
+
+@Controller('feriado')
+export class FeriadoController {
+  constructor(private readonly service: FeriadoService) {}
+
+  @Post()
+  create(@Body() dto: CreateFeriadoDto) {
+    return this.service.create(dto);
+  }
+
+  @Get()
+  findAll() {
+    return this.service.findAll();
+  }
+
+  @Get(':id')
+  findOne(@Param('id', ParseIntPipe) id: number) {
+    return this.service.findOne(id);
+  }
+
+  @Patch(':id')
+  update(@Param('id', ParseIntPipe) id: number, @Body() dto: UpdateFeriadoDto) {
+    return this.service.update(id, dto);
+  }
+
+  @Delete(':id')
+  remove(@Param('id', ParseIntPipe) id: number) {
+    return this.service.remove(id);
+  }
+}
