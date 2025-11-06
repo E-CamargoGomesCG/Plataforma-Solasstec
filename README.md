@@ -13,8 +13,8 @@ A Solasstec tem como objetivo otimizar o controle de acesso de ambientes corpora
 
 | Módulo | Status | Descrição |
 |--------|--------|-----------|
-| [solasstec-backend](https://github.com/seuuser/solasstec-backend) | Ativo | API principal e camada de integração com banco de dados |
-| [solasstec-frontend-old](https://github.com/seuuser/solasstec-frontend-old) | Descontinuado | Interface antiga, mantida apenas para histórico |
+| [solasstec-backend](https://github.com/E-CamargoGomesCG/Plataforma-Solasstec/tree/release/backend-v1) | Ativo | API principal e camada de integração com banco de dados |
+| [solasstec-frontend-old](https://github.com/E-CamargoGomesCG/Plataforma-Solasstec/tree/release/frontend-old-v1) | Descontinuado | Interface antiga, mantida apenas para histórico |
 
 ---
 
